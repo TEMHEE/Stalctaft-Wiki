@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class="gl">
+        <h2>Добро пожаловать в Stalcraft Wiki!</h2>
+        <p>Этот сайт поможет вам открыть для себя Stalcraft глазами мудрого Zivа. Здесь вы найдёте советы, истории и маршруты лутания артефактов.</p>
+        
+          <div class="section-image-container">
+            <img src="/static/images/zadhifon.jpg" alt="Фоновое изображение разделов" class="section-image">
+        </div>
+        
+        <div class="highlights">
+            <h3>Популярные разделы:</h3>
+            <ul class="highlight-list">
+                <li> <a href="/guides">Советы для новичков</a></li>
+                <li> <a href="/maps">Карты локаций</a></li>
+                <li> <a href="/artifacts">Каталог артефактов</a></li>
+                <li> <a href="/pvp">PvP тактики</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

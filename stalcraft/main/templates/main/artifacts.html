@@ -1,0 +1,67 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Каталог артефактов{% endblock %}
+
+{% block content %}
+<div class="gl">
+    <h2>Каталог артефактов</h2>
+    
+  
+    
+    <div class="artifacts-content">
+        <div class="artifact-category">
+            <h3>Защитные артефакты</h3>
+            <div class="artifact-grid">
+                <div class="artifact-item">
+                    <h4>Змеиный глаз</h4>
+                    <img src="/static/images/zmei.jpg" alt="Каменный цветок">
+                    <p>Живучесть: +1%; +1,9%<br>Скорость передвижения: +0,75%; +1,5% </p>
+                    <p>Класс: Биохимические</p>
+                </div>
+                <div class="artifact-item">
+                    <h4>Ветка Калины</h4>
+                    <img src="/static/images/vetka.jpg" alt="Ночная звезда">
+                    <p>Живучесть [+0,75%; +1,5%]<br>Эффективность лечения [+6,9%; +13,8%]</p>
+                    <p>Класс: Термические</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="artifact-category">
+            <h3>Наступательные артефакты</h3>
+            <div class="artifact-grid">
+                <div class="artifact-item">
+                    <h4>Браслет</h4>
+                    <img src="/static/images/braslet.jpg" alt="Огненный шар">
+                    <p>Скорость передвижения [+1,2%; +2,4%]<br>Восстановление выносливости [+1,8%; +3,6%]</p>
+                    <p>Класс: Гравитационные</p>
+                </div>
+                <div class="artifact-item">
+                    <h4>Спираль</h4>
+                    <img src="/static/images/spiral.jpg" alt="Электронный голем">
+                    <p>Скорость передвижения [+0,8%; +1,6%]<br>Переносимый вес [+3,5; +7]</p>
+                    <p>Класс: Электрофизические</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="artifact-category">
+            <h3>Универсальные артефакты</h3>
+            <div class="artifact-grid">
+                <div class="artifact-item">
+                    <h4>Кристалл</h4>
+                    <img src="/static/images/crystal.jpg" alt="Кристалл">
+                    <p>+5% ко всем характеристикам<br>+3% получаемый урон</p>
+                    <p>Локации: Все зоны (редко)</p>
+                </div>
+                <div class="artifact-item">
+                    <h4>Глаз</h4>
+                    <img src="/static/images/kisel.jpg" alt="Глаз">
+                    <p>+10% обнаружение артефактов<br>-5% защита</p>
+                    <p>Локации: Аномальные скопления</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/main/css/main.css">
+</head>
+<body>
+    <div class="glav">
+        <h1>Stalcraft Wiki</h1>
+        <nav>
+            <div class="nav-links">
+                <a href="/">Главная</a>
+                <a href="/guides">Советы для новичков</a>
+                <a href="/maps">Карты локаций</a>
+                <a href="/artifacts">Каталог артефактов</a>
+                <a href="/pvp">PvP тактики</a>
+                <a href="/about">О проекте</a>
+            </div>
+            <a href="/login" class="login-btn">Войти</a> 
+        </nav>
+    </div>
+    
+    {% block content %}
+    {% endblock %}
+    
+    <footer>
+        &copy; 2025 Stalcraft Wiki. Вдохновлено игрой Stalcraft.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Карты локаций{% endblock %}
+
+{% block content %}
+<div class="gl">
+    <h2>Карты локаций</h2>
+    
+    <div class="section-image-container">
+        <img src="/static/images/maps-image.jpg" alt="Карты локаций" class="section-image">
+    </div>
+    
+    <div class="maps-content">
+        <div class="map-section">
+            <h3>Кордон</h3>
+            <img src="/static/images/map-cordon.jpg" alt="Карта Кордона" class="map-image">
+            <p>Начальная локация для сталкеров. Основные точки интереса:</p>
+            <ul>
+                <li>База сталкеров (юго-запад)</li>
+                <li>Ангар с бандформированиями (север)</li>
+                <li>Туннель в Пустоши (восток)</li>
+            </ul>
+        </div>
+        
+        <div class="map-section">
+            <h3>Пустошь</h3>
+            <img src="/static/images/map-wasteland.jpg" alt="Карта Пустоши" class="map-image">
+            <p>Опасная зона с сильной радиацией. Ключевые места:</p>
+            <ul>
+                <li>Заброшенная станция (центр)</li>
+                <li>Аномалия "Железный лес" (северо-восток)</li>
+                <li>Переход в Агропром (юг)</li>
+            </ul>
+        </div>
+        
+        <div class="map-section">
+            <h3>Агропром</h3>
+            <img src="/static/images/map-agroprom.jpg" alt="Карта Агропрома" class="map-image">
+            <p>Зона с множеством аномалий и артефактов:</p>
+            <ul>
+                <li>Заброшенный институт (север)</li>
+                <li>Подземные коммуникации (центр)</li>
+                <li>Военная база (запад)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
